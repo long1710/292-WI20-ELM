@@ -1,0 +1,1 @@
+This is the resources folder, please make it organized

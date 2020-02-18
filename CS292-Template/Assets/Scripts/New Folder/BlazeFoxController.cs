@@ -10,7 +10,7 @@ public class BlazeFoxController : MonoBehaviour
     private float dirX;
     public int maxHealth = 5;
     private int curHealth;
-    public int moveSpeed = 300;
+    public int moveSpeed = 100;
     private float countdown;
     private int anchor;
 

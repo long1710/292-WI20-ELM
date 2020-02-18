@@ -15,10 +15,11 @@ public class PowerUp : MonoBehaviour //use this script for both powerUP: TODO: c
             Icon.SetActive(true);
             Debug.Log("set active");
             if(Icon.tag == "coffee"){
+                Debug.Log("coffee");
                 controller.ChangeSpeed(10);
             }
             if(Icon.tag == "monster"){
-                controller.ChangeSpeed(1000);
+                controller.ChangeSpeed(300);
             }
             Destroy(gameObject);
         } 

@@ -19,7 +19,7 @@ public class PowerUp : MonoBehaviour //use this script for both powerUP: TODO: c
                 controller.ChangeSpeed(10);
             }
             if(Icon.tag == "monster"){
-                controller.ChangeSpeed(300);
+                controller.ChangeSpeed(100);
             }
             Destroy(gameObject);
         } 

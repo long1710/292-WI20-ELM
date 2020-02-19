@@ -24,8 +24,6 @@ public class SpawnerPowerUp : MonoBehaviour
     GameObject[] spawnlings = new GameObject[1];
     void Start()
     {
-        maxDistance = 1708;
-        minDistance = -1789;
 
     }
 
@@ -34,12 +32,11 @@ public class SpawnerPowerUp : MonoBehaviour
     {
         if(timeBtwSpawns <= 0 && !IconCoffee.activeSelf && !IconMonster.activeSelf){ // so that no more power up spawn, temporary
             //if(spawnlings[0] == null){
-                //Transform randomSpawnPoint = SpawnPoint[Random.Range(0, SpawnPoint.Length)];
+                Transform randomSpawnPoint = SpawnPoint[Random.Range(0, SpawnPoint.Length)];
                 GameObject randomProjectile = projectile[Random.Range(0, projectile.Length)];
-                //note: can't work on position for now: work on homing position instead
                 spawn = new Vector3(Random.Range(minDistance, maxDistance), -900, 0);
-                GameObject spawnling = Instantiate(randomProjectile, spawn, Quaternion.identity) as GameObject;
-                //spawnlings[0] = spawnling;
+                GameObject spawnling = Instantiate(randomProjectile, randomSpawnPoint.localPosition, Quaternion.identity) as GameObject;
+            
                 spawnling.transform.SetParent(Panel.transform, false);
                 
                 if(startTimeBtwSpawns > minTimeBetweenSpawns){

@@ -17,7 +17,6 @@ public class Spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(SpawnPoint.Length);
     }
 
     // Update is called once per frame
@@ -26,10 +25,7 @@ public class Spawner : MonoBehaviour
         if(timeBtwSpawns <= 0){
             Transform randomSpawnPoint = SpawnPoint[Random.Range(0, SpawnPoint.Length)];
             GameObject randomProjectile = projectile[Random.Range(0, projectile.Length)];
-            //note: can't work on position for now: work on homing position instead
             GameObject spawnling = Instantiate(randomProjectile, randomSpawnPoint.localPosition, Quaternion.identity) as GameObject;
-            Debug.Log(randomSpawnPoint.position);
-            Debug.Log(SpawnPoint[0].position);
             spawnling.transform.SetParent(Panel.transform, false);
 
             if(startTimeBtwSpawns > minTimeBetweenSpawns){

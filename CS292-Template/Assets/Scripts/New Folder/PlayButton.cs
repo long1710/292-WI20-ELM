@@ -1,16 +1,14 @@
-﻿/*using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayButton : MonoBehaviour
 {
-    public GameObject Panel;
+    public GameObject GameScreen;
+    public GameObject TitleScreen;
     public void OpenPanel()
     {
-        if(Panel != null){
-            bool isActive = Panel.activeSelf;
-            Panel.setActive(!isActive);
-        }
+        GameScreen.SetActive(true);
+        TitleScreen.SetActive(false);
     }
 }
-*/

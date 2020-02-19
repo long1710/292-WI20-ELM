@@ -462,12 +462,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &386655020 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3949610035568178548, guid: 18a125320a7afae4892fdeb20e0264b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 2829927993073237831}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &512853711 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5510711698576668781, guid: 413e24f2ea7b7764ab0a4370782bed09,
@@ -3525,7 +3519,7 @@ PrefabInstance:
         type: 3}
       propertyPath: PanelToOpen
       value: 
-      objectReference: {fileID: 386655020}
+      objectReference: {fileID: 2081835676}
     - target: {fileID: 1621928654585691957, guid: 20a1d39c4b7099d43acd7034c8fd03b5,
         type: 3}
       propertyPath: CurrentPanel

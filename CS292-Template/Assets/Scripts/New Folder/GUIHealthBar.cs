@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GUIHealthBar : MonoBehaviour
 {
-    public GameObject FullHealth;
     public GameObject OneHit;
     public GameObject TwoHit;
     public GameObject ThreeHit;
@@ -22,27 +21,20 @@ public class GUIHealthBar : MonoBehaviour
 
     void Start()
     {
-        HealthBar = new GameObject[] {FullHealth, OneHit, TwoHit, ThreeHit, FourHit, FiveHit};
-        for(int i = 1; i < 6; i++){
-            HealthBar[i].SetActive(false);
-        }
+        HealthBar = new GameObject[] {OneHit, TwoHit, ThreeHit, FourHit, FiveHit};
+
     }
 
     public void SetValue(int value){
-        int health = 5 - value;
-        if(health == 6)
+        int health = 4 - value;
+        if(health == 4)
         {
             RestartGame();
         }
-        for (int i = 0; i < 6 ;i++){
-            if (i == health) {
-                HealthBar[i].SetActive(true);
-            }
-            else {
-                HealthBar[i].SetActive(false);
-                    /*RestartGame(); */}
 
-        }
+        HealthBar[health].SetActive(false);
+
+        
     }
     public void Update()
     {

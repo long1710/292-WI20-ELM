@@ -6,6 +6,7 @@ public class PlayButton : MonoBehaviour
 {
 	public GameObject GameScreen;
 	public GameObject TitleScreen;
+    public GameObject HelpScreen;
 
 	public void OpenPanel()
 	{
@@ -14,6 +15,7 @@ public class PlayButton : MonoBehaviour
             bool isActive = GameScreen.activeSelf;
             GameScreen.SetActive(!isActive);
         }*/
+        HelpScreen.SetActive(true);
 		GameScreen.SetActive(true);
 		TitleScreen.SetActive(false);
 	}

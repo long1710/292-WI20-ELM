@@ -33,7 +33,17 @@ public class BlazeFoxController : MonoBehaviour
            moveSpeed = anchor; 
        }
        dirX = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
+       if(dirX > 0)
+       {
+           transform.eulerAngles = new Vector3(0,0,0);
+       }
+       else if (dirX < 0)
+       {
+           transform.eulerAngles = new Vector3(0,180,0);
+       }
        RigidBody2d.velocity = new Vector2(dirX, 0f);
+
+       
 
     }
 

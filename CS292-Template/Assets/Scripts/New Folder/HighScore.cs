@@ -15,7 +15,6 @@ public class HighScore : MonoBehaviour
     }
     void Start()
     {   
-
         score = highscore;
         txt = txt.GetComponent<Text >();
         txt.text = score.ToString();
@@ -27,6 +26,7 @@ public class HighScore : MonoBehaviour
         if(score > highscore){
             highscore = score;
             txt.text = "score: " + score.ToString();
+            PlayerPrefs.SetInt("highscore",  highscore);
         }
     }
     public void changeScore(int amount){

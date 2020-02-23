@@ -6,6 +6,7 @@ TagManager:
   tags:
   - monster
   - coffee
+  - projectile platform
   layers:
   - Default
   - TransparentFX

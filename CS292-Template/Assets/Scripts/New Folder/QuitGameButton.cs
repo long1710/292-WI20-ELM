@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class QuitGameButton : MonoBehaviour
 {
 	public GameObject PanelToOpen;
@@ -16,5 +16,12 @@ public class QuitGameButton : MonoBehaviour
 			CurrentPanel.SetActive(false);
 			GameScreen.SetActive(false);
 		}
+	}
+
+	public void RestartGame()
+	{
+		//Debug.Log("this work");
+		//SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
+		SceneManager.LoadScene("Gameplay"); // loads current scene
 	}
 }

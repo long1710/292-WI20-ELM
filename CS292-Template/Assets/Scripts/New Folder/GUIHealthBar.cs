@@ -11,6 +11,8 @@ public class GUIHealthBar : MonoBehaviour
     public GameObject FourHit;
     public GameObject FiveHit;
 
+	public GameObject gameOverPanel;
+
     public static GUIHealthBar instance {get; private set;}
     // Start is called before the first frame update
 
@@ -29,7 +31,9 @@ public class GUIHealthBar : MonoBehaviour
         int health = 4 - value;
         if(health == 4)
         {
-            RestartGame();
+			gameOverPanel.SetActive(true);
+            //RestartGame();
+
         }
 
         HealthBar[health].SetActive(false);

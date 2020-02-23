@@ -14,6 +14,8 @@ public class BlazeFoxController : MonoBehaviour
     private float countdown;
     private int anchor;
 
+	public GameObject gameOverPanel; //game over screen
+
     private Rigidbody2D RigidBody2d;
     // Start is called before the first frame update
     void Start()
@@ -56,6 +58,11 @@ public class BlazeFoxController : MonoBehaviour
     public void changeHealth(int amount){
         curHealth -= amount;
         GUIHealthBar.instance.SetValue(curHealth);
+
+        if (amount <= 0)
+		{
+			gameOverPanel.SetActive(true);
+		}
     }
 
     public int getHealth(){

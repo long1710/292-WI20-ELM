@@ -11,6 +11,7 @@ public class CloseButton : MonoBehaviour
 		if (Panel != null)
 		{
 			Panel.SetActive(false);
+			Time.timeScale = 1;
 		}
 	}
 }

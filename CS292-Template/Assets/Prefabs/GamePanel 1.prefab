@@ -1922,6 +1922,7 @@ MonoBehaviour:
   ThreeHit: {fileID: 1773076733993654862}
   FourHit: {fileID: 1773076734315718718}
   FiveHit: {fileID: 1773076735067943862}
+  gameOverPanel: {fileID: 0}
 --- !u!1 &1773076734800809173
 GameObject:
   m_ObjectHideFlags: 0

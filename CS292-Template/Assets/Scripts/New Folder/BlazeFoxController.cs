@@ -10,10 +10,9 @@ public class BlazeFoxController : MonoBehaviour
     private float dirX;
     public int maxHealth = 5;
     private int curHealth;
-    float moveSpeed = 1.0f;
+    public int moveSpeed = 100;
     private float countdown;
-    private float anchor;
-    Animator anim;
+    private int anchor;
 
 	public GameObject gameOverPanel; //game over screen
 
@@ -24,41 +23,35 @@ public class BlazeFoxController : MonoBehaviour
         RigidBody2d = GetComponent<Rigidbody2D>();
         curHealth = maxHealth; 
         anchor = moveSpeed;
-        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(dirX == 0){
-            anim.SetBool("isRunning", false);
-        }
-        else{
-            anim.SetBool("isRunning", true);
-        }
-        if(moveSpeed != anchor){
+       if(moveSpeed != anchor){
            countdown -= Time.deltaTime;
-        }
-        if(countdown < 0 ){
+       }
+       if(countdown < 0 ){
            moveSpeed = anchor; 
-        }
-       dirX = Mathf.Floor(CrossPlatformInputManager.GetAxis("Horizontal") *100f) * moveSpeed ;
+       }
+       dirX = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
+       if(dirX > 0)
+       {
+           transform.eulerAngles = new Vector3(0,0,0);
+       }
+       else if (dirX < 0)
+       {
+           transform.eulerAngles = new Vector3(0,180,0);
+       }
+       RigidBody2d.velocity = new Vector2(dirX, 0f);
 
-        if(dirX > 0)
-        {
-            transform.eulerAngles = new Vector3(0,0,0);
-        }
-        else if (dirX < 0)
-        {
-            transform.eulerAngles = new Vector3(0,180,0);
-        }
-        RigidBody2d.velocity = new Vector2(dirX, 0f);
        
+
     }
 
-    public void ChangeSpeed(double amount){
+    public void ChangeSpeed(int amount){
         
-        moveSpeed = (float)amount;
+        moveSpeed = amount;
         countdown = 5;
     }
 

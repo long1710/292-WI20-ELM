@@ -39,11 +39,12 @@ public class projectile : MonoBehaviour
         if(noTouch != null){
             return; 
         }
-        HighScore.instance.changeScore(1);
         if(other.tag == "projectile platform"){
             speed = 0;
             TempSpeed = 0;
             return;
+        }else{
+            HighScore.instance.changeScore(1);
         }
         Destroy(gameObject);
     }

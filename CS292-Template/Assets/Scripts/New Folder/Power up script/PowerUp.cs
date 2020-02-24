@@ -5,22 +5,29 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour //use this script for both powerUP: TODO: changename later
 {
     public GameObject Icon;
+    public AudioSource pickupSound;
     void Start() {
-        Icon.SetActive(false);    
+        pickupSound = GetComponent<AudioSource>();
+        Icon.SetActive(false);
+        
     } 
     
-    void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) { //TODO
         BlazeFoxController controller = other.GetComponent<BlazeFoxController >();
-        if(controller != null){
+        
+        if (controller != null){
             Icon.SetActive(true);
             Debug.Log("set active");
             if(Icon.tag == "coffee"){
+             
                 Debug.Log("coffee");
                 controller.ChangeSpeed(10);
             }
             if(Icon.tag == "monster"){
+                
                 controller.ChangeSpeed(100);
             }
+            pickupSound.Play();
             Destroy(gameObject);
         } 
     }

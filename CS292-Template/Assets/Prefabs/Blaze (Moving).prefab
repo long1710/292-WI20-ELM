@@ -323,7 +323,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!61 &1801244026
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  moveSpeed: 100
   gameOverPanel: {fileID: 0}
 --- !u!212 &96646173
 SpriteRenderer:

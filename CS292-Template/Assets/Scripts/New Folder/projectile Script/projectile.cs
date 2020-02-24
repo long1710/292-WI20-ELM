@@ -19,6 +19,7 @@ public class projectile : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     private float angle;
+  
 
     void Start(){
         speed = 1;
@@ -29,8 +30,9 @@ public class projectile : MonoBehaviour
         rb.rotation = angle;
         direction.Normalize();
         movement = direction;
+    
     }
-    void OnTriggerEnter2D(Collider2D other){
+    void OnTriggerEnter2D(Collider2D other){ //TODO
         BlazeFoxController controller = other.GetComponent<BlazeFoxController >();
         if(controller != null){
             controller.changeHealth(1);

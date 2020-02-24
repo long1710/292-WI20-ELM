@@ -9,10 +9,11 @@ public class RetryButton : MonoBehaviour
 
 	public void OpenPanel()
 	{
-		if (PanelToOpen != null)
+		/*if (PanelToOpen != null)
 		{
 			PanelToOpen.SetActive(true);
 			CurrentPanel.SetActive(false);
-		}
+		}*/
+		GameObject newObject = Resources.Load("Prefabs/GamePanel") as GameObject;
 	}
 }

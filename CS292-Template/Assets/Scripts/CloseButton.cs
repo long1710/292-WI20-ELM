@@ -11,10 +11,21 @@ public class CloseButton : MonoBehaviour
 		if (Panel != null)
 		{
 			//AudioSource audio = GetComponent<AudioSource>();
-			//audio = this.GetComponent<AudioSource>();
+			//GetComponent<AudioSource>().PlayClipAtPoint();
 			//audio.Play();
-			Panel.SetActive(false);
-			Time.timeScale = 1;
+			StartCoroutine(example());
+			//Panel.SetActive(false);
+			//Time.timeScale = 1;
 		}
+	}
+
+	IEnumerator example()
+	{
+		AudioSource source = GetComponent<AudioSource>();
+		source.Play();
+		yield return new WaitWhile(() => source.isPlaying);
+		//do something
+		Panel.SetActive(false);
+		Time.timeScale = 1;
 	}
 }

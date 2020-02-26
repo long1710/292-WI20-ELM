@@ -115,7 +115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8540472205719995074}
   - component: {fileID: 8540472205719995075}
-  - component: {fileID: 4437618713935326426}
   - component: {fileID: 8540472205719995100}
   m_Layer: 5
   m_Name: Toggle (LeanToggle + LeanButton)
@@ -179,18 +178,6 @@ MonoBehaviour:
   onOff:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4437618713935326426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8540472205719995073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f3a65abc84bb364e915394bfcf636ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8540472205719995100
 MonoBehaviour:
   m_ObjectHideFlags: 0

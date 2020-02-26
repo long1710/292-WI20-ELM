@@ -8,7 +8,7 @@ public class QuitGameButton : MonoBehaviour
 	public GameObject CurrentPanel;
 	public GameObject GameScreen;
 
-	public void OpenPanel()
+	/*public void OpenPanel()
 	{
 		if (PanelToOpen != null)
 		{
@@ -16,12 +16,20 @@ public class QuitGameButton : MonoBehaviour
 			CurrentPanel.SetActive(false);
 			GameScreen.SetActive(false);
 		}
-	}
+	}*/
 
 	public void RestartGame()
 	{
-		//Debug.Log("this work");
-		//SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
+		StartCoroutine(playSound()); //call helper
+
+	}
+
+	IEnumerator playSound()
+	{
+		AudioSource source = GetComponent<AudioSource>(); //get sound
+		source.Play();
+		yield return new WaitWhile(() => source.isPlaying); //wait until sound has played
+															//do something
 		SceneManager.LoadScene("Gameplay"); // loads current scene
 	}
 }

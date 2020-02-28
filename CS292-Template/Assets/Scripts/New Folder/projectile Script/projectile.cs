@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,11 +41,15 @@ public class projectile : MonoBehaviour
         if(noTouch != null){
             return; 
         }
-        HighScore.instance.changeScore(1);
+        
         if(other.tag == "projectile platform"){
             speed = 0;
             TempSpeed = 0;
             return;
+        }
+        if(other.tag != "projectile platform" && other.tag != "Player"){
+            Debug.Log("hit");
+            HighScore.instance.changeScore(1);
         }
         Destroy(gameObject);
     }

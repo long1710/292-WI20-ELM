@@ -28,6 +28,7 @@ public class HighScore : MonoBehaviour
             txt.text = "score: " + score.ToString();
             PlayerPrefs.SetInt("highscore",  highscore);
         }
+        PlayerPrefs.SetInt("score", score);
     }
     public void changeScore(int amount){
         score += amount;

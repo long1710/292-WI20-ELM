@@ -8,20 +8,19 @@ public class QuitGameButton : MonoBehaviour
 	public GameObject CurrentPanel;
 	public GameObject GameScreen;
 
-	public void OpenPanel()
+    public void QuitGame()
 	{
-		if (PanelToOpen != null)
-		{
-			PanelToOpen.SetActive(true);
-			CurrentPanel.SetActive(false);
-			GameScreen.SetActive(false);
-		}
+		StartCoroutine(playSound());
 	}
 
-	public void RestartGame()
+	IEnumerator playSound()
 	{
-		//Debug.Log("this work");
-		//SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
-		SceneManager.LoadScene("Gameplay"); // loads current scene
+		AudioSource source = GetComponent<AudioSource>(); //get sound
+		source.Play();
+		yield return new WaitWhile(() => source.isPlaying); //wait until sound has played
+															//do something
+		//SceneManager.LoadScene("Gameplay"); // loads current scene
+        Application.Quit();
+		Debug.Log("Game is exiting");
 	}
 }

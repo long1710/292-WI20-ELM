@@ -17,7 +17,7 @@ public class MusicToggle : MonoBehaviour
 
         else
         {
-            AudioListener.volume = 100;
+            AudioListener.volume = 1;
             muted = false;
         }
     }

@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class HighScore : MonoBehaviour
 {
     public Text txt;
-    private int score;
-    private int highscore = 0;
+    public int score;
     public static HighScore instance {get; private set;}
     // Start is called before the first frame update
     void Awake(){
@@ -15,22 +14,21 @@ public class HighScore : MonoBehaviour
     }
     void Start()
     {   
-        score = highscore;
+        score = 0;
         txt = txt.GetComponent<Text >();
         txt.text = score.ToString();
     }
 
     // Update is called once per frame
     void Update()
-    {
-        if(score > highscore){
-            highscore = score;
-            txt.text = "score: " + score.ToString();
-            PlayerPrefs.SetInt("highscore",  highscore);
+    {   
+    
+        if(score > PlayerPrefs.GetInt("highscore")){
+            PlayerPrefs.SetInt("highscore",  score);
         }
-        PlayerPrefs.SetInt("score", score);
     }
     public void changeScore(int amount){
         score += amount;
+        txt.text = "score: " + score.ToString();
     }
 }

@@ -23,8 +23,11 @@ public class AudioController : MonoBehaviour
             source.Play();
         }
         if(other.tag == "powerUp"){
-            source.clip = PowerUp;
-            source.Play();
+            if (this.tag == "Player")
+            {
+                source.clip = PowerUp;
+                source.Play();
+            }
         }
     }
 }

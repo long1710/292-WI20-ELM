@@ -312,9 +312,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Movement: Press the left and right arrows on the screen to move Blaze\n\n\n\n\nProjectiles:
+  m_Text: "\nMovement: Press the left and right arrows on the screen to move Blaze\n\n\n\n\nProjectiles:
     Get out of the way or risk losing all of your GPA!\n\n\n\n\nPowerups: Pick them
-    up to score awesome abilities! \n\n\t\t\t\t\t\t"
+    up to acquire awesome abilities for a limited time! \n\n\t\t\t\t\t\t"
 --- !u!1 &1797672659324930145
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17, y: 253}
+  m_AnchoredPosition: {x: -6, y: 209}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6194692086326394379

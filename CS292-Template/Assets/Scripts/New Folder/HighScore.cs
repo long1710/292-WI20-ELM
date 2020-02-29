@@ -16,7 +16,7 @@ public class HighScore : MonoBehaviour
     {   
         score = 0;
         txt = txt.GetComponent<Text >();
-        txt.text = score.ToString();
+        txt.text = "Score: "  + score.ToString();
     }
 
     // Update is called once per frame
@@ -29,6 +29,6 @@ public class HighScore : MonoBehaviour
     }
     public void changeScore(int amount){
         score += amount;
-        txt.text = "score: " + score.ToString();
+        txt.text = "Score: " + score.ToString();
     }
 }

@@ -11,10 +11,10 @@ public class TitleScreenButton : MonoBehaviour
 
 	public void OpenPanel()
 	{
-		if (PanelToOpen != null)
-		{
+		//if (PanelToOpen != null)
+		//{
 			StartCoroutine(playSound()); //call helper
-		}
+		//}
 		
 	}
 

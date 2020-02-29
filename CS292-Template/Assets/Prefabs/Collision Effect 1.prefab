@@ -28,7 +28,7 @@ RectTransform:
   m_GameObject: {fileID: 1382102684958398764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 27.119, y: 27.119, z: 27.119}
+  m_LocalScale: {x: 0.80765843, y: 0.80765843, z: 0.80765843}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -54,7 +54,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -1544,7 +1544,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: f92d59dd1bd1043f9aae43a869040de7, type: 3}
+    - sprite: {fileID: 21300000, guid: 1c48cbce4b20f4476bee7cbae06d8b6a, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4801,7 +4801,7 @@ ParticleSystemRenderer:
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
-  m_SortingFudge: 0
+  m_SortingFudge: -100
   m_NormalDirection: 1
   m_ShadowBias: 0
   m_RenderAlignment: 0
@@ -4824,7 +4824,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382102684958398764}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 16f5e69a41d219c45ac5a040e54b0a81, type: 3}

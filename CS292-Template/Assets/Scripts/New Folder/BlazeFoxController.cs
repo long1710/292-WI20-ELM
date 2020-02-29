@@ -15,6 +15,7 @@ public class BlazeFoxController : MonoBehaviour
     private int anchor;
 
 	public GameObject gameOverPanel; //game over screen
+	public GameObject particleprefab;
 
     private Rigidbody2D RigidBody2d;
     // Start is called before the first frame update
@@ -57,7 +58,13 @@ public class BlazeFoxController : MonoBehaviour
     }
 
     public void changeHealth(int amount){
-        curHealth -= amount;
+		//GameObject psystem = Instantiate(particleprefab, RigidBody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+		//psystem.Play();
+		PlayParticle();
+        AudioSource source = GetComponent<AudioSource>(); //get sound
+		source.volume = 5;
+        source.Play();
+		curHealth -= amount;
         GUIHealthBar.instance.SetValue(curHealth);
 
         if (amount <= 0)
@@ -69,5 +76,11 @@ public class BlazeFoxController : MonoBehaviour
     public int getHealth(){
         return curHealth;
     }
-    
+
+    public void PlayParticle()
+	{
+		Debug.Log("Should Play Particle");
+        GameObject psystem = Instantiate(particleprefab, RigidBody2d.position, Quaternion.identity);
+		psystem.GetComponent<ParticleSystem>().Play();
+	}
 }

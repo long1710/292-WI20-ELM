@@ -1411,8 +1411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowdownIcon: {fileID: 1773076734959171908}
-  Particle: {fileID: 4452292766819701713, guid: 2cbfaf7ececaa354e89f1f50f3527b3f,
-    type: 3}
+  Particle: {fileID: 0}
   BlazeFox: {fileID: 3963147985293862474}
 --- !u!1 &1773076734115871515
 GameObject:
@@ -2109,8 +2108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowdownIcon: {fileID: 1773076734959171908}
-  Particle: {fileID: 4452292766819701713, guid: 2cbfaf7ececaa354e89f1f50f3527b3f,
-    type: 3}
+  Particle: {fileID: 0}
   BlazeFox: {fileID: 3963147985293862474}
 --- !u!1 &1773076734692513659
 GameObject:
@@ -2310,8 +2308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowdownIcon: {fileID: 1773076734959171908}
-  Particle: {fileID: 4452292766819701713, guid: 2cbfaf7ececaa354e89f1f50f3527b3f,
-    type: 3}
+  Particle: {fileID: 0}
   BlazeFox: {fileID: 3963147985293862474}
 --- !u!1 &1773076734959171908
 GameObject:
@@ -2801,20 +2798,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4690551698814162388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3963147985293862475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ed7c67591464f742819906844cb3a95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile: {fileID: 8300000, guid: 16f5e69a41d219c45ac5a040e54b0a81, type: 3}
-  PowerUp: {fileID: 8300000, guid: 6419ed88920eb8244bfd9eb34fa585fb, type: 3}
 --- !u!82 &7572629232307021991
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2911,6 +2894,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4690551698814162388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3963147985293862475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed7c67591464f742819906844cb3a95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile: {fileID: 8300000, guid: 16f5e69a41d219c45ac5a040e54b0a81, type: 3}
+  PowerUp: {fileID: 8300000, guid: 6419ed88920eb8244bfd9eb34fa585fb, type: 3}
 --- !u!1 &8784493476747908409
 GameObject:
   m_ObjectHideFlags: 0

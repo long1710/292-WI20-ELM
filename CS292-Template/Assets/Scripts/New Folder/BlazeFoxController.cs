@@ -13,6 +13,7 @@ public class BlazeFoxController : MonoBehaviour
     public int moveSpeed = 100;
     private float countdown;
     private int anchor;
+    Animator anim;
 
 	public GameObject gameOverPanel; //game over screen
 	public GameObject particleprefab;
@@ -21,6 +22,8 @@ public class BlazeFoxController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        anim = GetComponent<Animator>();
         PlayerPrefs.SetInt("score", 0);
         RigidBody2d = GetComponent<Rigidbody2D>();
         curHealth = maxHealth; 
@@ -37,14 +40,21 @@ public class BlazeFoxController : MonoBehaviour
            moveSpeed = anchor; 
        }
        dirX = CrossPlatformInputManager.GetAxis("Horizontal") * moveSpeed;
-       if(dirX > 0)
+       if(dirX > 0.2)
        {
+           anim.SetBool("isRunning", true);
            transform.eulerAngles = new Vector3(0,0,0);
        }
-       else if (dirX < 0)
+       else if (dirX < -0.2)
        {
+           anim.SetBool("isRunning", true);
            transform.eulerAngles = new Vector3(0,180,0);
        }
+       else{
+           anim.SetBool("isRunning", false);
+       }
+       
+       
        RigidBody2d.velocity = new Vector2(dirX, 0f);
 
        
@@ -66,10 +76,9 @@ public class BlazeFoxController : MonoBehaviour
         source.Play();
 		curHealth -= amount;
         GUIHealthBar.instance.SetValue(curHealth);
-
-        if (amount <= 0)
+        if (curHealth <= 3)
 		{
-			gameOverPanel.SetActive(true);
+            anim.SetBool("Death", true);
 		}
     }
 

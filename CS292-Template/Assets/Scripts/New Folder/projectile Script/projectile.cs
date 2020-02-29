@@ -9,7 +9,7 @@ public class projectile : MonoBehaviour
     private float maxSpeed = 10;
     public GameObject slowdownIcon;
     private float slowDuration;
-    
+    public GameObject Particle;
 
     float speed;
     float TempSpeed;
@@ -51,6 +51,7 @@ public class projectile : MonoBehaviour
             Debug.Log("hit");
             HighScore.instance.changeScore(1);
         }
+        Instantiate(Particle, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     // Update is called once per frame

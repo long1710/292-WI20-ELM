@@ -7,6 +7,8 @@ TagManager:
   - monster
   - coffee
   - projectile platform
+  - projectile
+  - powerUp
   layers:
   - Default
   - TransparentFX

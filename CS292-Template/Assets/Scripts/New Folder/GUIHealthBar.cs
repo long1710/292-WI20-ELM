@@ -31,8 +31,8 @@ public class GUIHealthBar : MonoBehaviour
         int health = 4 - value;
         if(health == 4)
         {
-			gameOverPanel.SetActive(true);
-            Time.timeScale = 0;
+			//gameOverPanel.SetActive(true);
+            //Time.timeScale = 0;
             //RestartGame();
 
         }

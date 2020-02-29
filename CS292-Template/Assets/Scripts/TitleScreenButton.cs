@@ -5,16 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenButton : MonoBehaviour
 {
-	public GameObject PanelToOpen;
-	public GameObject CurrentPanel;
-	public GameObject GamePanel;
 
 	public void OpenPanel()
 	{
-		if (PanelToOpen != null)
-		{
-			StartCoroutine(playSound()); //call helper
-		}
+
+		StartCoroutine(playSound()); //call helper
+		//}
 		
 	}
 

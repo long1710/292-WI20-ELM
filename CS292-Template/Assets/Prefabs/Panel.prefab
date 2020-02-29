@@ -537,7 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txt: {fileID: 3843437163275953074}
---- !u!114 &1621928654585691957
+--- !u!114 &5188984388248689636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8047592606253714115}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aee807e9c91414cdd8af97b9dcb75eaf, type: 3}
+  m_Script: {fileID: 11500000, guid: 5711bbb8b746c4826a079b0169727c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   titleScreen: {fileID: 0}
@@ -654,7 +654,7 @@ PrefabInstance:
     - target: {fileID: 2077994595482133747, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
       propertyPath: m_Text
-      value: Retry
+      value: Title Screen
       objectReference: {fileID: 0}
     - target: {fileID: 2077994595482133747, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
@@ -664,7 +664,7 @@ PrefabInstance:
     - target: {fileID: 2077994595482133747, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
       propertyPath: m_FontData.m_MinSize
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2077994595482133747, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
@@ -675,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 3621469760034440137, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
       propertyPath: m_Name
-      value: Retry Button
+      value: TitleScreen Button
       objectReference: {fileID: 0}
     - target: {fileID: 6299351500194189667, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
@@ -801,11 +801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1621928654585691957}
+      objectReference: {fileID: 5188984388248689636}
     - target: {fileID: 6535798726614281374, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Retry
+      value: OpenPanel
       objectReference: {fileID: 0}
     - target: {fileID: 6535798726614281374, guid: 5a87976f7ffff439697ff5322c58de98,
         type: 3}
@@ -840,15 +840,15 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2705057842166536933, guid: 5a87976f7ffff439697ff5322c58de98, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5a87976f7ffff439697ff5322c58de98, type: 3}
---- !u!1 &8047592606253714115 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3621469760034440137, guid: 5a87976f7ffff439697ff5322c58de98,
-    type: 3}
-  m_PrefabInstance: {fileID: 6767996929427900682}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &758587746198100073 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6299351500194189667, guid: 5a87976f7ffff439697ff5322c58de98,
+    type: 3}
+  m_PrefabInstance: {fileID: 6767996929427900682}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8047592606253714115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3621469760034440137, guid: 5a87976f7ffff439697ff5322c58de98,
     type: 3}
   m_PrefabInstance: {fileID: 6767996929427900682}
   m_PrefabAsset: {fileID: 0}

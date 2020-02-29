@@ -5,9 +5,7 @@ using UnityEngine;
 public class PowerUp : MonoBehaviour //use this script for both powerUP: TODO: changename later
 {
     public GameObject Icon;
-    public AudioSource pickupSound;
     void Start() {
-        pickupSound = GetComponent<AudioSource>();
         Icon.SetActive(false);
         
     } 
@@ -27,7 +25,6 @@ public class PowerUp : MonoBehaviour //use this script for both powerUP: TODO: c
                 
                 controller.ChangeSpeed(100);
             }
-            pickupSound.Play();
             Destroy(gameObject);
         } 
     }

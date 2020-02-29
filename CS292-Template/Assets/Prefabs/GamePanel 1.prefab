@@ -3206,6 +3206,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1801244028, guid: 201f422d08f2740a099961e4fa85ee1d, type: 3}
+      propertyPath: particleprefab
+      value: 
+      objectReference: {fileID: 1382102684958398764, guid: 8a97b67ee3145d2469760660c0d61744,
+        type: 3}
     - target: {fileID: 3343032106801920930, guid: 201f422d08f2740a099961e4fa85ee1d,
         type: 3}
       propertyPath: m_LocalPosition.x

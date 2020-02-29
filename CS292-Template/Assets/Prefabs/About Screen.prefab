@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Text: "\n\r\nLeft Movement Button\r\nPNG Guru (pngguru.com)\r\n\r\nCoffee Sprite
     \r\nPNG Guru (pngguru.com)\r\n\r\nCigarettes Sprite\r\nPNG Guru (pngguru.com)\r\n\r\nAlcohol
     Sprite\r\nPNG Guru (pngguru.com)\r\n\r\nMarijuana Sprite\r\nPNG Guru (pngguru.com)
-    \r\n\r\nHealth Bar\r\n\n\r\n\r\n"
+    \r\n\r\nHealth Bar\r Font\nSigmar One (Google Fonts)\n\n\r\n\r\n"
 --- !u!1001 &9133081131920861050
 PrefabInstance:
   m_ObjectHideFlags: 0

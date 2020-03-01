@@ -29,7 +29,8 @@ public class SpawnerPowerUp : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {  
+
         if(timeBtwSpawns <= 0 && !IconCoffee.activeSelf && !IconMonster.activeSelf){ // so that no more power up spawn, temporary
             //if(spawnlings[0] == null){
                 Transform randomSpawnPoint = SpawnPoint[Random.Range(0, SpawnPoint.Length)];

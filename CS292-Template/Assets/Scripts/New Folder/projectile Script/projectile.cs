@@ -47,8 +47,8 @@ public class projectile : MonoBehaviour
             TempSpeed = 0;
             return;
         }
-        if(other.tag != "projectile platform" && other.tag != "Player"){
-            Debug.Log("hit");
+        if(other.tag == "ground"){
+           
             HighScore.instance.changeScore(1);
         }
         Instantiate(Particle, transform.position, Quaternion.identity);

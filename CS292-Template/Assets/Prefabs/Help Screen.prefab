@@ -1129,6 +1129,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9110970161868327995, guid: 46c269c50f01447caaf40661c23a3f4e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClosePanel2
+      objectReference: {fileID: 0}
     - target: {fileID: 9110970161868327998, guid: 46c269c50f01447caaf40661c23a3f4e,
         type: 3}
       propertyPath: m_Name

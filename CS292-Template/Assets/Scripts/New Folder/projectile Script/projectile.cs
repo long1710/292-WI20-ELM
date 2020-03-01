@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class projectile : MonoBehaviour
 {   
     private float minSpeed = 1;
-    private float maxSpeed = 10;
+    private float maxSpeed = 3;
     public GameObject slowdownIcon;
     private float slowDuration;
     public GameObject Particle;
@@ -22,7 +22,7 @@ public class projectile : MonoBehaviour
   
 
     void Start(){
-        speed = 1;
+        speed = Random.Range(minSpeed, maxSpeed);
         TempSpeed = speed;
         rb = this.GetComponent<Rigidbody2D >();
         Vector2 direction = BlazeFox.position - transform.position;

@@ -966,12 +966,12 @@ PrefabInstance:
     - target: {fileID: 1773076734993864863, guid: 34781abb9fc09cd44baaf6839388a841,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.2000122
       objectReference: {fileID: 0}
     - target: {fileID: 1773076734993864863, guid: 34781abb9fc09cd44baaf6839388a841,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.16998291
       objectReference: {fileID: 0}
     - target: {fileID: 1773076734993864863, guid: 34781abb9fc09cd44baaf6839388a841,
         type: 3}
@@ -1264,6 +1264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TitleScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 414183351888422245, guid: 4b360fb9ceb697246bdda4cd85a5f48f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1300765424018517835, guid: 4b360fb9ceb697246bdda4cd85a5f48f,
         type: 3}

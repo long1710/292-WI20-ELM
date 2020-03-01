@@ -18,7 +18,7 @@ public class PlayButton : MonoBehaviour
         HelpScreen.SetActive(true);
 		GameScreen.SetActive(true);
 		TitleScreen.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = 0;
     }
 
 }

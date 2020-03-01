@@ -359,6 +359,9 @@ MonoBehaviour:
   - {fileID: 1773076733668870328}
   - {fileID: 1773076733220537844}
   - {fileID: 1773076735118928980}
+  - {fileID: 1716302433153771559}
+  - {fileID: 5696882986619179646}
+  - {fileID: 3405004038445163454}
   projectile:
   - {fileID: 1773076734606758044}
   - {fileID: 1773076734084336297}
@@ -366,6 +369,7 @@ MonoBehaviour:
   - {fileID: 1382423040453922357}
   - {fileID: 5691289562889669970}
   - {fileID: 1773076734887225566}
+  - {fileID: 5938278436560033765}
   Panel: {fileID: 1773076734993864862}
   startTimeBtwSpawns: 2.5
   minTimeBetweenSpawns: 1.5
@@ -522,6 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 1773076734959171908}
+  otherIcon: {fileID: 1773076734115871515}
 --- !u!50 &1608035659
 Rigidbody2D:
   serializedVersion: 4
@@ -758,6 +763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Icon: {fileID: 1773076734115871515}
+  otherIcon: {fileID: 1773076734959171908}
 --- !u!50 &1683067545
 Rigidbody2D:
   serializedVersion: 4
@@ -1962,6 +1968,9 @@ MonoBehaviour:
   - {fileID: 1773076734309187331}
   - {fileID: 1773076735021671889}
   - {fileID: 1773076735023295193}
+  - {fileID: 4273402882154853934}
+  - {fileID: 7999824620230668626}
+  - {fileID: 2131318125522827286}
   projectile:
   - {fileID: 1773076733459033585}
   - {fileID: 1773076733233286554}
@@ -2588,13 +2597,14 @@ GameObject:
   - component: {fileID: 1773076734993864863}
   - component: {fileID: 1773076734993864861}
   - component: {fileID: 1773076734993864860}
+  - component: {fileID: 2081835680}
   m_Layer: 5
   m_Name: GamePanel 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1773076734993864863
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2688,6 +2698,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2081835680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773076734993864862}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ffe6f80d2f053d4e92de76b31b27c67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IconCoffee: {fileID: 1773076734959171908}
+  IconMonster: {fileID: 1773076734115871515}
 --- !u!1 &1773076735021671888
 GameObject:
   m_ObjectHideFlags: 0
@@ -3966,15 +3990,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 201f422d08f2740a099961e4fa85ee1d, type: 3}
---- !u!224 &3963147985293862474 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3343032106801920930, guid: 201f422d08f2740a099961e4fa85ee1d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1773076734663040488}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3963147985293862475 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3343032106801920931, guid: 201f422d08f2740a099961e4fa85ee1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1773076734663040488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &3963147985293862474 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3343032106801920930, guid: 201f422d08f2740a099961e4fa85ee1d,
     type: 3}
   m_PrefabInstance: {fileID: 1773076734663040488}
   m_PrefabAsset: {fileID: 0}

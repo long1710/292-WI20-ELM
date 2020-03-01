@@ -10,7 +10,7 @@ public class GameOverScore : MonoBehaviour
     void Start()
     {
         txt = txt.GetComponent<Text >();
-        txt.text = HighScore.instance.score.ToString();
+        txt.text = "Score: " + HighScore.instance.score.ToString();
     }
 
     // Update is called once per frame

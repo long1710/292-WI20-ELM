@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 7008749609603238818}
   - component: {fileID: 4872314512141416588}
   m_Layer: 0
-  m_Name: alcohol 1
+  m_Name: Budweiser
   m_TagString: projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,8 +164,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382423040453922357}
   m_LocalRotation: {x: -0, y: -0, z: 0.00018677954, w: 1}
-  m_LocalPosition: {x: -74.24, y: -16.88, z: 0}
-  m_LocalScale: {x: 0.28456992, y: 0.28456992, z: 1.4087499}
+  m_LocalPosition: {x: -74.214, y: -17.045, z: 0}
+  m_LocalScale: {x: 0.19869731, y: 0.19869731, z: 0.9836417}
   m_Children: []
   m_Father: {fileID: 1773076734993864863}
   m_RootOrder: 29
@@ -2564,7 +2564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1773076734993864863
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3068,7 +3068,7 @@ GameObject:
   - component: {fileID: 1502915701405151921}
   - component: {fileID: 8158870437286782691}
   m_Layer: 0
-  m_Name: Cigarettes (3)
+  m_Name: Weed 2
   m_TagString: projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3081,13 +3081,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5691289562889669970}
-  m_LocalRotation: {x: -0, y: -0, z: 0.00018677954, w: 1}
-  m_LocalPosition: {x: -80.87, y: -17.64, z: 0}
-  m_LocalScale: {x: 0.28456992, y: 0.28456992, z: 1.4087499}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -70.755, y: -16.77002, z: 0}
+  m_LocalScale: {x: 0.06318199, y: 0.06346593, z: 1}
   m_Children: []
   m_Father: {fileID: 1773076734993864863}
   m_RootOrder: 31
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.021000002}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &9070018765807647543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3126,7 +3126,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8276ec37069fb2f49990fd6e9e3a10fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 484f0b144438dcf4a9f869ab34594bad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3175,7 +3175,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.5, y: 10.5}
+    oldSize: {x: 11.92, y: 10.6}
     newSize: {x: 5.12, y: 5.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3214,7 +3214,7 @@ GameObject:
   - component: {fileID: 6388009332260626331}
   - component: {fileID: 7257388294881183770}
   m_Layer: 0
-  m_Name: Cigarettes (2)
+  m_Name: Malibu
   m_TagString: projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3229,7 +3229,7 @@ Transform:
   m_GameObject: {fileID: 5938278436560033765}
   m_LocalRotation: {x: -0, y: -0, z: 0.00018677954, w: 1}
   m_LocalPosition: {x: -76.73, y: -17.29, z: 0}
-  m_LocalScale: {x: 0.28456992, y: 0.28456992, z: 1.4087499}
+  m_LocalScale: {x: 0.21844725, y: 0.21844725, z: 1.0814128}
   m_Children: []
   m_Father: {fileID: 1773076734993864863}
   m_RootOrder: 30

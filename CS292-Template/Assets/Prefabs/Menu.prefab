@@ -873,9 +873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5711bbb8b746c4826a079b0169727c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PanelToOpen: {fileID: 0}
-  CurrentPanel: {fileID: 5510711698576668780}
-  GamePanel: {fileID: 0}
 --- !u!82 &1445115315432925732
 AudioSource:
   m_ObjectHideFlags: 0

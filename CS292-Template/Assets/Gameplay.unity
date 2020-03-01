@@ -908,6 +908,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GamePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 1773076734993864862, guid: 34781abb9fc09cd44baaf6839388a841,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1773076734993864863, guid: 34781abb9fc09cd44baaf6839388a841,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1268,7 +1273,7 @@ PrefabInstance:
     - target: {fileID: 414183351888422245, guid: 4b360fb9ceb697246bdda4cd85a5f48f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1300765424018517835, guid: 4b360fb9ceb697246bdda4cd85a5f48f,
         type: 3}

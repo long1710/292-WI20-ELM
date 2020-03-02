@@ -11,6 +11,7 @@ public class MenuButton : MonoBehaviour
         if(Panel != null)
 		{
 			Panel.SetActive(true);
+			Time.timeScale = 0;
 		}
 	}
     

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6386594443554346226}
   - component: {fileID: 6386594443554346228}
   - component: {fileID: 6386594443554346229}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Collision Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -551, y: -756}

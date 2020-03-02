@@ -349,6 +349,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: About Screen
       objectReference: {fileID: 0}
+    - target: {fileID: 5579526749092571784, guid: db19cb8491b4f40e9a7e1302e028643f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262973768936549605, guid: db19cb8491b4f40e9a7e1302e028643f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262973768936549605, guid: db19cb8491b4f40e9a7e1302e028643f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6438975766126873219, guid: db19cb8491b4f40e9a7e1302e028643f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 9.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8491442133194773219, guid: db19cb8491b4f40e9a7e1302e028643f,
         type: 3}
       propertyPath: m_LocalPosition.x

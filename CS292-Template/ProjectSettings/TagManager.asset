@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - monster
+  - coffee
+  - projectile platform
+  - projectile
+  - powerUp
+  - ground
   layers:
   - Default
   - TransparentFX

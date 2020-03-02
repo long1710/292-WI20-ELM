@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class projectile : MonoBehaviour
 {   
     private float minSpeed = 1;
-    private float maxSpeed = 10;
+    private float maxSpeed = 3;
     public GameObject slowdownIcon;
     private float slowDuration;
     public GameObject Particle;
@@ -22,7 +22,7 @@ public class projectile : MonoBehaviour
   
 
     void Start(){
-        speed = 1;
+        speed = Random.Range(minSpeed, maxSpeed);
         TempSpeed = speed;
         rb = this.GetComponent<Rigidbody2D >();
         Vector2 direction = BlazeFox.position - transform.position;
@@ -47,8 +47,8 @@ public class projectile : MonoBehaviour
             TempSpeed = 0;
             return;
         }
-        if(other.tag != "projectile platform" && other.tag != "Player"){
-            Debug.Log("hit");
+        if(other.tag == "ground"){
+           
             HighScore.instance.changeScore(1);
         }
         Instantiate(Particle, transform.position, Quaternion.identity);

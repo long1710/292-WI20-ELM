@@ -11,7 +11,7 @@ public class Score : MonoBehaviour
     void Start()
     {
         txt = txt.GetComponent<Text >();
-        txt.text = PlayerPrefs.GetInt("highscore").ToString();
+        txt.text = "High Score: " + PlayerPrefs.GetInt("highscore").ToString();
     }
 
     // Update is called once per frame

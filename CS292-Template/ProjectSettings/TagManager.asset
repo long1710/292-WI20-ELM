@@ -9,6 +9,7 @@ TagManager:
   - projectile platform
   - projectile
   - powerUp
+  - ground
   layers:
   - Default
   - TransparentFX

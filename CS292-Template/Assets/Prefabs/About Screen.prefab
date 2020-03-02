@@ -231,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8491442133194773219
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1017,7 +1017,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "\n\r\nLeft Movement Button\r\nPNG Guru (pngguru.com)\r\n\r\nCoffee Sprite
     \r\nPNG Guru (pngguru.com)\r\n\r\nCigarettes Sprite\r\nPNG Guru (pngguru.com)\r\n\r\nAlcohol
-    Sprite\r\nPNG Guru (pngguru.com)\r\n\r\nMarijuana Sprite\r\nPNG Guru (pngguru.com)
+    Sprite\rs\nPNG Guru (pngguru.com)\r\n\r\nMarijuana Sprite\rs\nPNG Guru (pngguru.com)
     \r\n\r\nHealth Bar\r Font\nSigmar One (Google Fonts)\n\n\r\n\r\n"
 --- !u!1001 &9133081131920861050
 PrefabInstance:
@@ -1165,6 +1165,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9110970161868327995, guid: 46c269c50f01447caaf40661c23a3f4e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClosePanel2
       objectReference: {fileID: 0}
     - target: {fileID: 9110970161868327998, guid: 46c269c50f01447caaf40661c23a3f4e,
         type: 3}
